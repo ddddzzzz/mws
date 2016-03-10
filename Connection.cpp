@@ -65,6 +65,7 @@ void Connection::parseWord(ev::io &w) {
                         return;
                     } else {
                         filePath = lastWord;
+                        filePath = filePath.substr(0, filePath.find("?"));
                     }
                     break;
                 }
