@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
     */
 
     std::ofstream log_file;
-    log_file.open("final.log", std::ofstream::out | std::ofstream::app);
+    log_file.open("/var/log/final.log", std::ofstream::out | std::ofstream::app);
     if (!log_file) {
         std::cerr << "Can't open logfile for writing" << std::endl;
         exit(11);
